@@ -22,7 +22,7 @@ export default function App() {
   // has been packed. So we pass on the id from Item Element from where we call it and use a
   // filter to keep only those items which don't match with the id.
   // We are passing the function as a prop to the PackingList. From packingList, we will again move
-  // it to Item component as a props because the finxt cross button is in Item component.
+  // it to Item component as a props because the final cross button is in Item component.
 
   function handleDeleteItem(id) {
     setItems(items.filter((item) => item.id !== id));
