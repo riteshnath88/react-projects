@@ -155,7 +155,7 @@ function Order({ closeHour, openHour }) {
 // React v18
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // Strict mode checks for any outdated components and gives us errrs or warnings.
+  // Strict mode checks for any outdated components and gives us errors or warnings.
   <React.StrictMode>
     <App />
   </React.StrictMode>

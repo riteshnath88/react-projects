@@ -8,6 +8,7 @@ const messages = [
 ];
 
 function App() {
+  // Declaring useState()
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
