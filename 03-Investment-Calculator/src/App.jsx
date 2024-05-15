@@ -1,44 +1,19 @@
-import Header from "./components/Header";
+import { useState } from "react";
+import Header from "./components/Header.jsx";
 import UserInput from "./components/UserInput";
+import Results from "./components/Results";
 
-function Results() {
-  return (
-    <table id="result">
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Investent Value 2</th>
-          <th>Interest Year</th>
-          <th>Total Interest</th>
-          <th>Invested Capital</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>$15,900</td>
-          <td>$900</td>
-          <td>$900</td>
-          <td>$15,000</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>$16,854</td>
-          <td>$954</td>
-          <td>$1,854</td>
-          <td>$15,000</td>
-        </tr>
-      </tbody>
-    </table>
-  );
-}
+let INPUT = {};
 
 function App() {
+  const [results, setResults] = useState(false);
+  function getFormData(data) {
+    INPUT = data;
+  }
   return (
     <>
       <Header />
       <UserInput />
-      <Results />
     </>
   );
 }
