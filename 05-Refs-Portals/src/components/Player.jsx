@@ -1,3 +1,5 @@
+import { useState } from "react-dom";
+
 export default function Player() {
   return (
     <section id="player">
